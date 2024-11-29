@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="book">
+    <!-- Page 1 -->
+    <div class="page" id="page1">
+      <div class="left">
+        <img src="your-photo.jpg" alt="Your Picture" class="profile-pic">
+        <h1>About Me</h1>
+        <p>Hello! I am Anshika Kumari, a passionate B.Tech student eager to create amazing projects.</p>
+        <button onclick="goToPage(3)">Get in Touch</button>
+      </div>
+      <div class="right">
+        <h1>Education</h1>
+        <ul>
+          <li>B.Tech (3rd Semester) - XYZ University</li>
+          <li>High School - ABC School</li>
+        </ul>
+        <div class="next-btn" onclick="turnPage(1)">&#x27A1;</div>
+      </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page" id="page2">
+      <div class="left">
+        <h1>Skills</h1>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Problem Solving</li>
+          <li>Team Collaboration</li>
+        </ul>
+      </div>
+      <div class="right">
+        <h1>Projects</h1>
+        <ul>
+          <li><strong>Project A:</strong> Description of the project.</li>
+          <li><strong>Project B:</strong> Description of the project.</li>
+        </ul>
+        <div class="next-btn" onclick="turnPage(2)">&#x27A1;</div>
+      </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page" id="page3">
+      <div class="left">
+        <h1>Contact Me</h1>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="right">
+        <h1>Thank You!</h1>
+        <p>Thank you for visiting my portfolio. Let's connect and build something great together!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
